@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  simple_deployment_pipeline⚙️:
+  simple_deployment_pipeline:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -17,5 +17,3 @@ jobs:
         run: npm install
       - name: Lint check
         run: npm run eslint
-
-
