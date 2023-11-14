@@ -1,0 +1,14 @@
+name: Hello Universe
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  hello_universe_job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Say Hello
+        run: |
+          echo 'Hello Universe!'
